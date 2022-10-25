@@ -5,3 +5,7 @@
   --color-headings: #1b0760;
   --color-body: #918ca4;
 }
+
+h1{
+  color: var(--color-primary)
+}
