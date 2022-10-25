@@ -70,7 +70,7 @@ a {
   font-size: 2rem;
   font-weight: bold;
 }
-
+ 
 .link-arrow::after {
   content: "-->";
   margin-left: 5px;
@@ -84,5 +84,41 @@ a {
 @media screen and (min-width: 1024px) {
   .link-arrow {
     font-size: 1.5rem;
+  }
+}
+
+/*Badge Component*/
+
+.badge{
+  border-radius: 20px;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.badge--primary {
+  background-color: var(--color-primary);
+}
+
+.badge--secondary {
+  background-color: var(--color-secondary);
+}
+
+.badge--small{
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .badge{
+    font-size: 1.6rem;
+
+  } 
+  
+  .badge--small{
+    font-size: 1.2rem;
   }
 }
