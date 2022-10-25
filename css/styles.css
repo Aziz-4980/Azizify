@@ -5,6 +5,12 @@
   --color-headings: #1b0760;
   --color-body: #918ca4;
 }
+
+*, *::after, *::before {
+
+  box-sizing: border-box;
+}
+
 html {
   /* 62.5% of 16px = 10px */
   font-size: 62.5%;
@@ -180,3 +186,58 @@ ul{
 }
 
 /* will be same for all screen sizes */
+
+
+/* button component */
+
+.btn{
+  border-radius: 4rem;
+  outline: none;
+    border: none;
+    padding: 2rem 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1rem  0rem;
+    font-size: 2rem;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.btn--secondary{
+  color:white;
+  background-color: var(--color-secondary);
+
+}.btn--secondary:hover{
+  background-color: #23bcd7 ;
+
+}
+
+.btn--primary{
+  color: var(--color-primary);
+  border:1px solid var(--color-primary);
+  background-color: white;
+}
+
+.btn--accent{
+  background-color:var(--color-accent);
+  color:white
+
+}
+
+.btn--accent:hover{
+  background-color: rgb(233, 24, 24)
+  
+}
+
+.btn--block{
+  width: 100%;
+  display: inline-block;
+
+}
+
+@media screen and (min-width:1024px) {
+ .btn{
+  font-size: 1.5rem;
+ }
+}
