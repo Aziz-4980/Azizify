@@ -187,6 +187,10 @@ ul{
   align-items: center;
 }
 
+.icon-container--accent{
+  background-color: var(--color-accent);
+}
+
 /* will be same for all screen sizes */
 
 
@@ -282,13 +286,6 @@ ul{
 
 /* Card component */
 
-.card {
-  border-radius: 7px;
-  box-shadow: 0 0 20px 10px #f3f3f3;
-  overflow: hidden;
-}
-
-.card__header,
 .card__body {
   padding: 2rem 3rem;
 }
@@ -434,5 +431,61 @@ ul{
 
   .quote__organization {
     font-size: 1.6rem;
+  }
+}
+
+/* grid component */
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+/* testimonial component */
+
+.testimonial {
+  padding: 3rem;
+}
+
+.testimonial__image {
+  position: relative;
+  margin: 0 3rem;
+}
+
+.testimonial__image > img {
+  width: 100%;
+}
+
+.testimonial__image > .icon-container {
+  position: absolute;
+  top: 3rem;
+  right: -32px;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial__image {
+    margin: 0;
+  }
+
+  .testimonial .quote,
+  .testimonial .quote__author {
+    font-size: 2.4rem;
+  }
+
+  .testimonial .quote {
+    margin-left: 6rem;
+    margin-right: 0;
   }
 }
