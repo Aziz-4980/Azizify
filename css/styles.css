@@ -321,6 +321,10 @@ fill: white
 }
 
 /* Plan component */
+.plan {
+  transition: transform 0.2s ease-out;
+}
+
 .plan__name {
   color: #fff;
   margin: 0;
@@ -339,6 +343,10 @@ fill: white
   margin-right: 1rem;
 }
 
+.card__header{
+  padding: 2rem 2rem;
+}
+
 .plan__description {
   font-size: 2rem;
   font-weight: 300;
@@ -348,6 +356,10 @@ fill: white
 
 .plan .list__item {
   margin-bottom: 2rem;
+}
+
+.plan--popular {
+  transform: scale(1.1);
 }
 
 .plan--popular .card__header {
@@ -363,6 +375,14 @@ fill: white
   right: 5%;
 }
 
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan--popular:hover {
+  transform: scale(1.15);
+}
+
 @media screen and (min-width: 1024px) {
   .plan__name {
     font-size: 1.4rem;
@@ -376,7 +396,6 @@ fill: white
     font-size: 1.6rem;
   }
 
-  
   .plan__description {
     font-size: 1.7rem;
   }
@@ -737,4 +756,14 @@ fill: white
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+}
+
+/* Plans Block */
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
