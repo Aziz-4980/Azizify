@@ -206,7 +206,7 @@ fill: white
   border-radius: 4rem;
   outline: none;
     border: none;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     text-transform: uppercase;
     text-align: center;
     margin: 1rem  0rem;
@@ -274,6 +274,7 @@ fill: white
   font-size: 2rem;
   outline: 0;
   padding: 1.5rem 3.5rem;
+  width:0;
 }
 
 ::placeholder {
@@ -753,7 +754,7 @@ color: white;
 
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -767,7 +768,6 @@ color: white;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
-
 /* Plans Block */
 .block-plans .grid {
   gap: 8rem 4rem;
