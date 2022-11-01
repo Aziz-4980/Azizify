@@ -694,7 +694,9 @@ color: white;
 }
 
 .nav__brand {
-  transform: translateY(5px);
+  /* transform: translateY(5px); */
+  height: 12rem;
+  width: 12rem
 }
 
 @media screen and (min-width: 768px) {
